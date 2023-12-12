@@ -16,3 +16,4 @@ opt.smartcase = true
 opt.cursorline = true
 
 opt.scrolloff = 8
+opt.sidescrolloff = 8

@@ -2,9 +2,10 @@ local keymap = vim.keymap.set
 
 vim.g.mapleader = " "
 
-keymap("i", "kj", "<Esc>")
+-- Normal mode
 keymap("n", "<leader>pf", ":Ex<CR>")
-
+keymap("n", "<leader>qq", ":qa<CR>")
 keymap("n", "<leader>l", ":Lazy<CR>")
 
-keymap("n", "<leader>qq", ":qa<CR>")
+-- Insert mode
+keymap("i", "kj", "<Esc>")
