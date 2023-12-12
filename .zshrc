@@ -124,3 +124,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 alias config='/usr/bin/git --git-dir=$HOME/cfg.git/ --work-tree=$HOME'
 alias c='config'
+alias lgc='lazygit --git-dir=$HOME/cfg.git --work-tree=$HOME'
