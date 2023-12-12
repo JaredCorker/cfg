@@ -1,5 +1,5 @@
-require("core.options")
-require("core.keymaps")
+require("jared.core.options")
+require("jared.core.keymaps")
 
-require("lazy-setup")
-require("lazy").setup("plugins")
+require("jared.lazy-setup")
+require("lazy").setup("jared.plugins")
