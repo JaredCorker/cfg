@@ -1,5 +1,7 @@
 local opt = vim.opt
 
+vim.opt.termguicolors = true
+
 opt.relativenumber = true
 opt.number = true
 
