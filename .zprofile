@@ -48,6 +48,7 @@ alias tunnel-redeploy="rea-as okta property-com-au-ReadWrite -- ~/Documents/REAx
   --tunnel '3500:pca-property-data-api-prod.property-research-prod.property.com.au:443'"
 alias tunnelGraphiql="rea-as okta property-com-au-ReadWrite -- ~/Documents/REAx/fargate-bastion/fargate-bastion subnet-0cd3045256a67d382 \
   --tunnel '3001:pca-property-data-api-prod.property-research-prod.property.com.au:443'"
+alias nc='cd ~/.config/$(ls ~/.config/ | fzf) && nvim'
 function unzipsitemaps() {
   for d in ./*/; do
     (cd "$d" && for x in sitemap-[0-9].xml.gz; do
