@@ -19,3 +19,5 @@ opt.cursorline = true
 
 opt.scrolloff = 8
 opt.sidescrolloff = 8
+
+opt.confirm = true
