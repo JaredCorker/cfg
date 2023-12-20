@@ -133,9 +133,8 @@ function tt() {
 	cdexp;
 	tmux new-session -d -s exp;
 	cd;
-	tmux new-session -d -s tunnel;
 	tmux new-session -d -s misc;
-	tmux attach-session -t tunnel;
+	tmux new-session -s tunnel;
 }
 function check() {
 	git checkout $(git branch -l | fzf);
