@@ -11,4 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("jared.plugins")
+local plugins = "jared.plugins"
+local opts = { install = { colorscheme = { "tokyonight" } } }
+
+require("lazy").setup(plugins, opts)
