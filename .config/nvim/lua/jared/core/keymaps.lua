@@ -13,6 +13,24 @@ keymap("n", "<C-l>", "<C-w>l")
 keymap("n", "<leader>ss", ":w<CR>")
 keymap("n", "<leader>sa", ":wa<CR>")
 keymap("n", "G", "Gzb")
+keymap("n", "J", "mzJ`z")
+keymap("n", "<C-d>", "<C-d>zz")
+keymap("n", "<C-u>", "<C-u>zz")
+
+keymap({ "n", "v" }, "<leader>d", "\"_d")
+keymap({ "n", "v" }, "<leader>y", "\"+y")
+keymap("n", "<leader>Y", "\"+Y")
+
+keymap("n", "Q", "<nop>")
+
+keymap("n", "<leader>sr", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", { desc = "Search and replace" })
 
 -- Insert mode
 keymap("i", "kj", "<Esc>")
+
+-- Visual mode
+keymap("v", "J", ":m '>+1<CR>gv=gv")
+keymap("v", "K", ":m '<-2<CR>gv=gv")
+
+-- X mode
+keymap("x", "<leader>p", "\"_dP")
