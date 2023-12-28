@@ -11,6 +11,7 @@ keymap("n", "<C-j>", "<C-w>j")
 keymap("n", "<C-k>", "<C-w>k")
 keymap("n", "<C-l>", "<C-w>l")
 keymap("n", "<leader>ss", ":w<CR>")
+keymap("n", "<leader>sa", ":wa<CR>")
 
 -- Insert mode
 keymap("i", "kj", "<Esc>")
