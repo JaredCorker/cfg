@@ -1,7 +1,7 @@
 return {
-    "williamboman/mason.nvim",
-    config = function()
-      require("mason").setup()
-      vim.keymap.set("n", "<leader>m", "<cmd>Mason<CR>", { desc = "Open Mason" })
-    end
+  "williamboman/mason.nvim",
+  keys = {
+    { "<leader>m", "<cmd>Mason<CR>", desc = "Open Mason" }
+  },
+  config = true
 }
