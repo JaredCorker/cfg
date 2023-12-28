@@ -3,7 +3,7 @@ local keymap = vim.keymap.set
 vim.g.mapleader = " "
 
 -- Normal mode
-keymap("n", "<leader>qq", ":qa<CR>")
+keymap("n", "<leader>qa", ":qa<CR>", { desc = "Quit all neovim" })
 keymap("n", "<leader>l", ":Lazy<CR>")
 keymap("n", "<C-h>", "<C-w>h")
 keymap("n", "<C-j>", "<C-w>j")
