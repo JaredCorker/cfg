@@ -25,6 +25,9 @@ keymap("n", "Q", "<nop>")
 
 keymap("n", "<leader>sr", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", { desc = "Search and replace" })
 
+keymap("n", "<leader>o", "o<Esc>k")
+keymap("n", "<leader>O", "O<Esc>j")
+
 -- Insert mode
 keymap("i", "kj", "<Esc>")
 
