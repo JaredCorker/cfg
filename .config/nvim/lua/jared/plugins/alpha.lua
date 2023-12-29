@@ -25,7 +25,6 @@ return {
             dashboard.button('e', '  New file', ':ene <CR>'),
             dashboard.button('r', '  Recently used files', ':Telescope oldfiles <CR>'),
             dashboard.button('s', '  Find text', ':Telescope live_grep <CR>'),
-            dashboard.button('n', '  Open file tree', ':NvimTreeOpen <CR>'),
             dashboard.button('q', '  Quit Neovim', ':qa<CR>'),
         }
 
