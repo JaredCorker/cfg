@@ -1,29 +1,27 @@
 return {
   {
     "williamboman/mason.nvim",
-    keys = {
-      { "<leader>m", "<cmd>Mason<CR>", desc = "Open Mason" }
-    },
-    config = true
+    opts = {},
   },
   {
     "williamboman/mason-lspconfig.nvim",
     opts = {
       ensure_installed = {
         "lua_ls",
-        "tsserver"
-      }
-    }
+        "tsserver",
+      },
+    },
   },
   {
     "neovim/nvim-lspconfig",
     config = function()
       local lspconfig = require("lspconfig")
+
       lspconfig.lua_ls.setup({
         settings = {
           Lua = {
             diagnostics = {
-              globals = {'vim'},
+              globals = { "vim" },
             },
           },
         },
@@ -31,9 +29,9 @@ return {
       lspconfig.tsserver.setup({})
 
       local keymap = vim.keymap.set
-      keymap('n', 'K', vim.lsp.buf.hover)
-      keymap('n', 'gd', vim.lsp.buf.definition)
-      keymap('n', '<leader>ca', vim.lsp.buf.code_action)
-    end
-  }
+      keymap("n", "K", vim.lsp.buf.hover)
+      keymap("n", "gd", vim.lsp.buf.definition)
+      keymap("n", "<leader>ca", vim.lsp.buf.code_action)
+    end,
+  },
 }
